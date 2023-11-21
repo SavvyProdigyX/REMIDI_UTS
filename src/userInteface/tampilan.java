@@ -141,7 +141,7 @@ public class tampilan extends javax.swing.JFrame {
             txtNama.setText(nama);
             txtEmail.setText(email);
         } else {
-            JOptionPane.showMessageDialog(this, "Data NIM " + nimToSearch + " tidak ditemukan");
+            JOptionPane.showMessageDialog(this, "NIM yang anda masukan " + nimToSearch + " tidak ditemukan");
         }
     }
 } catch (HeadlessException | NumberFormatException | SQLException e) {
