@@ -133,12 +133,10 @@ public class tampilan extends javax.swing.JFrame {
         ResultSet rs = st.executeQuery(sql);
 
         if (rs.next()) {
-            // Menemukan catatan yang sesuai, Anda sekarang dapat mengambil dan menampilkannya
             String nim = rs.getString("nim");
             String nama = rs.getString("nama");
             String email = rs.getString("email");
 
-            // Tampilkan data yang diambil sesuai kebutuhan, misalnya, dalam JTextField atau JOptionPane
             txtNIM.setText(nim);
             txtNama.setText(nama);
             txtEmail.setText(email);
