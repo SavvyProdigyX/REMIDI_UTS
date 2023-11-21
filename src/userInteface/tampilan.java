@@ -123,7 +123,7 @@ public class tampilan extends javax.swing.JFrame {
     String nimToSearch = txtCari.getText();  // Anggap Anda memiliki JTextField bernama txtNIM
 
     if (nimToSearch.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Silahkan isi NIM terlebih dahulu");
+        JOptionPane.showMessageDialog(this, "Silahkan isi NIM dulu");
     } else {
         String sql = "SELECT * FROM mhs WHERE nim = '" + nimToSearch + "'";
         System.out.println(sql);
@@ -143,7 +143,7 @@ public class tampilan extends javax.swing.JFrame {
             txtNama.setText(nama);
             txtEmail.setText(email);
         } else {
-            JOptionPane.showMessageDialog(this, "Data dengan NIM " + nimToSearch + " tidak ditemukan");
+            JOptionPane.showMessageDialog(this, "Data NIM " + nimToSearch + " tidak ditemukan");
         }
     }
 } catch (HeadlessException | NumberFormatException | SQLException e) {
